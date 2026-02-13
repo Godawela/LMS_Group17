@@ -4,28 +4,31 @@ import com.gl.lms.dto.*;
 import com.gl.lms.entity.*;
 import com.gl.lms.exception.LibraryManagementSystemException;
 import com.gl.lms.repository.*;
-import org.springframework.beans.factory.annotation.Autowired;
+
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Service
+@RequiredArgsConstructor
 public  class LibraryManagementSystemServiceImpl implements LibraryManagementSystemService {
 
-    @Autowired
+   
     private UsersRepository usersRepository;
 
-    @Autowired
+    
     private AuthorsRepository authorsRepository;
 
-    @Autowired
+   
     private BooksRepository booksRepository;
 
-    @Autowired
+   
     private LibraryCardsRepository libraryCardsRepository;
 
-    @Autowired
+   
     private ReviewsRepository reviewsRepository;
 
     @Override

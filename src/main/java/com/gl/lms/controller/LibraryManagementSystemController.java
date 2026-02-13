@@ -8,7 +8,8 @@ import com.gl.lms.service.LibraryManagementSystemService;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -21,11 +22,11 @@ import java.util.List;
 @RequestMapping("/LMS")
 @CrossOrigin
 @Validated
-
+@RequiredArgsConstructor
 public class LibraryManagementSystemController {
 
-  @Autowired
-  public LibraryManagementSystemService libraryManagementSystemService;
+  
+  private LibraryManagementSystemService libraryManagementSystemService;
 
     @PostMapping("/add-user-and-issue-library-card")
     public ResponseEntity<ResponseDTO> addUserAndIssueLibraryCard(@RequestBody @Valid UsersDTO usersDTO) throws  LibraryManagementSystemException{

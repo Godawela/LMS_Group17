@@ -2148,3 +2148,127 @@ Caused by: org.hibernate.HibernateException: Unable to determine Dialect without
 24-Jan-2026 13:08:33 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addUserAndIssueLibraryCard(com.gl.lms.dto.UsersDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'usersDTO' on field 'name': rejected value [Alice]; codes [Pattern.usersDTO.name,Pattern.name,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [usersDTO.name,name]; arguments []; default message [name],[Ljakarta.validation.constraints.Pattern$Flag;@6c73fb2d,[A-Z][a-z]+\s[A-Z][a-z]+]; default message [Name should be exactly 2 words]] 
 24-Jan-2026 13:13:40 ERROR - org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<com.gl.lms.dto.ResponseDTO> com.gl.lms.controller.LibraryManagementSystemController.addReviews(java.lang.String,com.gl.lms.dto.ReviewsDTO) throws com.gl.lms.exception.LibraryManagementSystemException: [Field error in object 'reviewsDTO' on field 'booksDTO': rejected value [null]; codes [NotNull.reviewsDTO.booksDTO,NotNull.booksDTO,NotNull.com.gl.lms.dto.BooksDTO,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [reviewsDTO.booksDTO,booksDTO]; arguments []; default message [booksDTO]]; default message [Books can not be null]] 
 24-Jan-2026 13:36:29 ERROR - jakarta.validation.ConstraintViolationException: fetchUserAndIssuedLibraryCardByEmail.email: Email should be in valid format
+13-Feb-2026 18:21:58 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13-Feb-2026 18:21:58 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+13-Feb-2026 18:21:58 INFO - HV000001: Hibernate Validator 8.0.2.Final
+13-Feb-2026 18:21:59 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.9 with PID 12996 (started by user in E:\sec\LibraryManagementSystem)
+13-Feb-2026 18:21:59 INFO - No active profile set, falling back to 1 default profile: "default"
+13-Feb-2026 18:22:00 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-Feb-2026 18:22:00 INFO - Finished Spring Data repository scanning in 72 ms. Found 5 JPA repository interfaces.
+13-Feb-2026 18:22:01 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-Feb-2026 18:22:01 INFO - HHH000412: Hibernate ORM core version 6.6.15.Final
+13-Feb-2026 18:22:01 INFO - HHH000026: Second-level cache disabled
+13-Feb-2026 18:22:02 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13-Feb-2026 18:22:02 INFO - HikariPool-1 - Starting...
+13-Feb-2026 18:22:02 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+13-Feb-2026 18:22:02 INFO - HikariPool-1 - Start completed.
+13-Feb-2026 18:22:02 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13-Feb-2026 18:22:02 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13-Feb-2026 18:22:03 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13-Feb-2026 18:22:03 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:22:04 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13-Feb-2026 18:22:05 INFO - Exposing 1 endpoint beneath base path '/actuator'
+13-Feb-2026 18:22:05 INFO - Started LibraryManagementSystemApplicationTests in 7.153 seconds (process running for 8.705)
+13-Feb-2026 18:22:06 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:22:06 INFO - HikariPool-1 - Shutdown initiated...
+13-Feb-2026 18:22:06 INFO - HikariPool-1 - Shutdown completed.
+13-Feb-2026 18:31:19 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13-Feb-2026 18:31:19 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+13-Feb-2026 18:31:20 INFO - HV000001: Hibernate Validator 8.0.2.Final
+13-Feb-2026 18:31:20 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.9 with PID 21244 (started by user in E:\sec\LibraryManagementSystem)
+13-Feb-2026 18:31:20 INFO - No active profile set, falling back to 1 default profile: "default"
+13-Feb-2026 18:31:21 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-Feb-2026 18:31:21 INFO - Finished Spring Data repository scanning in 92 ms. Found 5 JPA repository interfaces.
+13-Feb-2026 18:31:22 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-Feb-2026 18:31:22 INFO - HHH000412: Hibernate ORM core version 6.6.15.Final
+13-Feb-2026 18:31:22 INFO - HHH000026: Second-level cache disabled
+13-Feb-2026 18:31:23 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13-Feb-2026 18:31:23 INFO - HikariPool-1 - Starting...
+13-Feb-2026 18:31:23 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+13-Feb-2026 18:31:23 INFO - HikariPool-1 - Start completed.
+13-Feb-2026 18:31:23 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13-Feb-2026 18:31:23 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13-Feb-2026 18:31:24 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13-Feb-2026 18:31:24 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:31:24 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13-Feb-2026 18:31:26 INFO - Exposing 1 endpoint beneath base path '/actuator'
+13-Feb-2026 18:31:26 INFO - Started LibraryManagementSystemApplicationTests in 6.661 seconds (process running for 8.12)
+13-Feb-2026 18:31:27 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:31:27 INFO - HikariPool-1 - Shutdown initiated...
+13-Feb-2026 18:31:27 INFO - HikariPool-1 - Shutdown completed.
+13-Feb-2026 18:32:53 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13-Feb-2026 18:32:53 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+13-Feb-2026 18:32:53 INFO - HV000001: Hibernate Validator 8.0.2.Final
+13-Feb-2026 18:32:53 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.9 with PID 3864 (started by user in E:\sec\LibraryManagementSystem)
+13-Feb-2026 18:32:53 INFO - No active profile set, falling back to 1 default profile: "default"
+13-Feb-2026 18:32:55 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-Feb-2026 18:32:55 INFO - Finished Spring Data repository scanning in 87 ms. Found 5 JPA repository interfaces.
+13-Feb-2026 18:32:56 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-Feb-2026 18:32:56 INFO - HHH000412: Hibernate ORM core version 6.6.15.Final
+13-Feb-2026 18:32:56 INFO - HHH000026: Second-level cache disabled
+13-Feb-2026 18:32:56 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13-Feb-2026 18:32:56 INFO - HikariPool-1 - Starting...
+13-Feb-2026 18:32:56 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+13-Feb-2026 18:32:56 INFO - HikariPool-1 - Start completed.
+13-Feb-2026 18:32:56 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13-Feb-2026 18:32:56 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13-Feb-2026 18:32:57 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13-Feb-2026 18:32:57 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:32:58 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13-Feb-2026 18:33:00 INFO - Exposing 1 endpoint beneath base path '/actuator'
+13-Feb-2026 18:33:00 INFO - Started LibraryManagementSystemApplicationTests in 6.796 seconds (process running for 8.292)
+13-Feb-2026 18:33:00 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:33:00 INFO - HikariPool-1 - Shutdown initiated...
+13-Feb-2026 18:33:00 INFO - HikariPool-1 - Shutdown completed.
+13-Feb-2026 18:34:55 INFO - Could not detect default configuration classes for test class [com.gl.lms.LibraryManagementSystemApplicationTests]: LibraryManagementSystemApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13-Feb-2026 18:34:55 INFO - Found @SpringBootConfiguration com.gl.lms.LibraryManagementSystemApplication for test class com.gl.lms.LibraryManagementSystemApplicationTests
+13-Feb-2026 18:34:56 INFO - HV000001: Hibernate Validator 8.0.2.Final
+13-Feb-2026 18:34:56 INFO - Starting LibraryManagementSystemApplicationTests using Java 21.0.9 with PID 11504 (started by user in E:\sec\LibraryManagementSystem)
+13-Feb-2026 18:34:56 INFO - No active profile set, falling back to 1 default profile: "default"
+13-Feb-2026 18:34:59 INFO - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+13-Feb-2026 18:34:59 INFO - Finished Spring Data repository scanning in 135 ms. Found 5 JPA repository interfaces.
+13-Feb-2026 18:35:00 INFO - HHH000204: Processing PersistenceUnitInfo [name: default]
+13-Feb-2026 18:35:00 INFO - HHH000412: Hibernate ORM core version 6.6.15.Final
+13-Feb-2026 18:35:00 INFO - HHH000026: Second-level cache disabled
+13-Feb-2026 18:35:01 INFO - No LoadTimeWeaver setup: ignoring JPA class transformer
+13-Feb-2026 18:35:01 INFO - HikariPool-1 - Starting...
+13-Feb-2026 18:35:01 INFO - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+13-Feb-2026 18:35:01 INFO - HikariPool-1 - Start completed.
+13-Feb-2026 18:35:01 WARN - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+13-Feb-2026 18:35:01 INFO - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+13-Feb-2026 18:35:02 INFO - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+13-Feb-2026 18:35:02 INFO - Initialized JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:35:02 WARN - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+13-Feb-2026 18:35:04 INFO - Exposing 1 endpoint beneath base path '/actuator'
+13-Feb-2026 18:35:04 INFO - Started LibraryManagementSystemApplicationTests in 8.466 seconds (process running for 11.288)
+13-Feb-2026 18:35:05 INFO - Closing JPA EntityManagerFactory for persistence unit 'default'
+13-Feb-2026 18:35:05 INFO - HikariPool-1 - Shutdown initiated...
+13-Feb-2026 18:35:05 INFO - HikariPool-1 - Shutdown completed.
